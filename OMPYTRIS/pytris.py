@@ -24,6 +24,7 @@ screen = pygame.display.set_mode((1200, 730), FULLSCREEN | HWSURFACE | DOUBLEBUF
 pygame.time.set_timer(pygame.USEREVENT, framerate * 10) # 유저이벤트 0.3초마다 입력
 pygame.display.set_caption("OPENMIND TETRIS™")
 volume = 1.0
+# 1. class export to modules
 class ui_variables:
     # Fonts
     font_path = "./assets/fonts/Maplestory_Light.ttf"
@@ -109,7 +110,7 @@ def checkCombo(combo_count,sent):
         else :
             sent += 4
     return sent
-
+#every def export module
 class button(): 
     def __init__(self, color, x,y,width,height, text=''):
         self.color = color
@@ -442,7 +443,7 @@ leaders = sorted(leaders.items(), key=operator.itemgetter(1), reverse=True)
 matrix = [[0 for y in range(height + 1)] for x in range(width)] # Board matrix
 
 
-
+# every process export modules
 ###########################################################
 # Loop Start
 ###########################################################
